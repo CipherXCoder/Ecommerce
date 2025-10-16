@@ -3,7 +3,7 @@ import createError from "http-errors";
 import jwt from "jsonwebtoken";
 import { JWT_SECRET } from "../config/secrets.js";
 import { prismaClient } from "../db/prisma.js";
-import { User } from "../generated/prisma/index.js";
+import { User } from "@prisma/client";
 
 export async function authMiddleware(req: Request, res: Response, next: NextFunction) {
   const authHeader = req.headers.authorization;
