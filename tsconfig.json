@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "NodeNext",
+    "outDir": "dist",
+    "rootDir": ".",
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "types": ["node"],
+    "typeRoots": ["./node_modules/@types", "./types"]
+  },
+  "include": ["src/**/*", "types/**/*"],
+  "exclude": ["node_modules", "dist"],
+  "ts-node": { "esm": true }
+}

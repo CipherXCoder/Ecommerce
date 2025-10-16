@@ -1,0 +1,45 @@
+{
+  "name": "ecommerce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "start": "node dist/src/server.js",
+    "dev": "tsx watch src/server.ts"
+  },
+  "keywords": [],
+  "author": "Bouderya Mohamed",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/cookie-parser": "^1.4.9",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/hpp": "^0.2.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^24.6.0",
+    "nodemon": "^3.1.10",
+    "prisma": "^6.17.1",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.17.1",
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "express-async-handler": "^1.2.0",
+    "express-rate-limit": "^8.1.0",
+    "helmet": "^8.1.0",
+    "hpp": "^0.2.3",
+    "http-errors": "^2.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "zod": "^4.1.11"
+  }
+}
